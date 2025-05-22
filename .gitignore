@@ -1,0 +1,68 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+# If your venv is in the project root:
+venv_face_detector/
+# Or a more general pattern if you use different names or tools like conda:
+venv/
+env/
+ENV/
+.venv/
+.env/
+.Python/
+
+# Data - IMPORTANT: This ignores the WIDER_FACE dataset and any other raw data
+# Assuming your WIDER_FACE dataset is in data/WIDER_FACE/
+# This will ignore the entire WIDER_FACE directory and its contents.
+data/WIDER_FACE/
+# If you have other large datasets in 'data/', you might want to ignore them too:
+# data/some_other_dataset/
+# Or, if you want to ignore EVERYTHING in data/ except specific small config files:
+# data/*
+# !data/important_config.json
+
+# Logs (e.g., TensorBoard logs)
+logs/
+*.log
+
+# Trained Models (Optional - these can be large)
+# If you decide to ignore trained model files:
+models_trained/*.keras
+models_trained/*.h5
+models_trained/*.pb
+models_trained/saved_model/
+# If you use Git LFS for models, you wouldn't ignore them here but track them with LFS.
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp
+*~
+*.sublime-project
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Output files (e.g., if predict.py saves images)
+# predictions/ # If you create such a directory for output images
+
+# Compiled files (if any, not typical for this Python project yet)
+# *.so
+# *.o
+
+# Temporary files
+*.tmp
+*.temp
